@@ -5,7 +5,9 @@
 }
 
 body {
+    font-family: 'Lato', sans-serif;
     line-height: 1.5;
+    background-color: #eee;
 }
 
 #header {
@@ -18,6 +20,8 @@ body {
     width: 100%;
     top: 0px;
     justify-content: space-between;
+    
+    background-color: #eee;
 }
 
 #header-img {
@@ -51,45 +55,86 @@ ul {
     margin: 1.2rem;
 
 }
-
-.form_section {
-    text-align: center;
+.nav-link:hover{
+  color: gray;
 }
+.nav-link:active{
+  color: gray;
+}
+
 
 #container {
     max-width: 800px;
-    margin: 3rem auto 0;
+    margin: 7rem auto 0;
     overflow: hidden;
 }
 
+.form_section {
+  text-align: center;
+}
+.form_section h1{
+padding-bottom: 15px;
+}
 input#email {
     width: 50%;
-    height: 1.9rem;
+    height: 2.4rem;
     margin: auto;
     display: flex;
-    padding: 2rem auto;
+    padding: 3rem auto;
+    padding-left: 10px;
+    border: none;
+    border-radius: 3px;
 }
-
+#email:focus{
+  outline-style: solid;
+  outline-color: #f1bdfe;
+  outline-width: 2px;
+}
 
 
 .btn {
     display: inlne-block;
-    padding: 0.5rem 1.5rem;
+    padding: 0.8rem 1.5rem;
     color: #444;
+    border: none;
+    border-radius: 5px;
     text-transform: uppercase;
     font-weight: bold;
     background-color: #f1bdfe;
-    width: 20%;
-    margin: 10px 0;
+    width: 25%;
+    margin: 20px 0;
+    
 
+}
+.btn:hover{
+  cursor: pointer;
+  background-color: beige;
+  color: gray;
+  
+}
+
+#features{
+  padding-top: 95px;
+}
+.feature{
+  padding-bottom: 20px;
 }
 
 #how_it_works {
+  padding-top: 70px;
     text-align: center;
 }
 
 @media (min-width: 1200px) {
     body {
         background-color: rgb(198, 144, 144);
+        color: rgb(237, 237, 237);
+    }
+    #header{
+      background-color: rgb(198, 144, 144);
+      border-bottom: 1px solid rgb(193, 159, 159);
+    }
+    .nav-link:hover{
+      color: beige;
     }
 }
